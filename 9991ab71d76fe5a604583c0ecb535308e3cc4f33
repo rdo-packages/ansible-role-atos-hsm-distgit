@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "97217bb7_be7cf883",
+        "filename": "ansible-role-atos-hsm.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2020-05-26T15:47:27Z",
+      "side": 1,
+      "message": "should be 2%{?alphatag}%{?dist}",
+      "range": {
+        "startLine": 13,
+        "startChar": 16,
+        "endLine": 13,
+        "endChar": 39
+      },
+      "revId": "9991ab71d76fe5a604583c0ecb535308e3cc4f33",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
