@@ -2,17 +2,21 @@
 %global srcname ansible_role_atos_hsm
 %global rolename ansible-role-atos-hsm
 
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%global commit e51c244f4f323175d9c7db73065b087369701711
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        0.1.0
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Ansible role for configuring ATOS HSM Clients
 
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-atos-hsm
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0:        https://github.com/openstack/%{rolename}/archive/%{commit}.tar.gz#/%{rolename}-%{shortcommit}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
@@ -48,3 +52,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Tue May 26 2020 Yatin Karel <ykarel@redhat.com> - 0.1.0-0.1
+- Update to post 0.1.0 (e51c244f4f323175d9c7db73065b087369701711)
+
