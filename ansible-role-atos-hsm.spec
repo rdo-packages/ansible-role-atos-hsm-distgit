@@ -5,8 +5,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        4.0.0
+Release:        1%{?dist}
 Summary:        Ansible role for configuring ATOS HSM Clients
 
 Group:          System Environment/Base
@@ -50,3 +50,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Fri Nov 04 2022 RDO <dev@lists.rdoproject.org> 4.0.0-1
+- Update to 4.0.0
+
