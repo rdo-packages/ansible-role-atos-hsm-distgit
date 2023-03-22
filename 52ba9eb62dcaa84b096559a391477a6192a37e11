@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Wed, 22 Mar 2023 17:21:14 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/ansible-role-atos-hsm-distgit/+/47953
+Project: openstack/ansible-role-atos-hsm-distgit
+Branch: refs/heads/rpm-master
