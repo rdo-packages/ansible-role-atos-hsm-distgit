@@ -1,3 +1,4 @@
+%global milestone .0rc1
 
 %global srcname ansible_role_atos_hsm
 %global rolename ansible-role-atos-hsm
@@ -5,14 +6,18 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        6.0.0
+Release:        0.1%{?milestone}%{?dist}
 Summary:        Ansible role for configuring ATOS HSM Clients
 
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-atos-hsm
 Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+
+#
+# patches_base=6.0.0.0rc1
+#
 
 BuildArch:      noarch
 BuildRequires:  git-core
@@ -50,3 +55,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Fri Oct 20 2023 RDO <dev@lists.rdoproject.org> 6.0.0-0.1.0rc1
+- Update to 6.0.0.0rc1
+
