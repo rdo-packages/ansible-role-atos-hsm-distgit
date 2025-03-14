@@ -12,7 +12,7 @@ Summary:        Ansible role for configuring ATOS HSM Clients
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-atos-hsm
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{rolename}/%{srcname}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git-core
