@@ -1,0 +1,8 @@
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Code-Review+2: Joel Capitao <jcapitao@redhat.com>
+Workflow+1: Joel Capitao <jcapitao@redhat.com>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 17 Mar 2025 10:23:25 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/openstack/ansible-role-atos-hsm-distgit/+/56812
+Project: openstack/ansible-role-atos-hsm-distgit
+Branch: refs/heads/rpm-master
