@@ -3,6 +3,8 @@
 %global rolename ansible-role-atos-hsm
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources ansible-role-atos-hsm}
+%{!?dlrn: %global tarsources ansible_role_atos_hsm}
 
 Name:           %{rolename}
 Version:        XXX
@@ -12,7 +14,7 @@ Summary:        Ansible role for configuring ATOS HSM Clients
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-atos-hsm
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{rolename}/%{tarsources}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git-core
@@ -27,7 +29,7 @@ Requires: (python3dist(ansible) or ansible-core >= 2.11)
 Ansible role to configure ATOS HSM clients
 
 %prep
-%autosetup -n %{rolename}-%{upstream_version} -S git
+%autosetup -n %{tarsources}-%{upstream_version} -S git
 #Remove ansible from requirements.txt as dependency on ansible is managed manually
 sed -i '/^ansible/d' requirements.txt
 
